@@ -11,6 +11,20 @@ def home():
     return "API Server Running"
 
 
+@app.route('/login')
+def login():
+    # Call the login.py script or implement the login logic here
+    return "Login Page"
+
+
+@app.route('/signup')
+def signup():
+    # Call the signup.py script or implement the signup logic here
+    return "Signup Page"
+
+# Add other routes similarly...
+
+
 def run_api(script_name):
     python_executable = sys.executable
     return subprocess.Popen([python_executable, script_name])
